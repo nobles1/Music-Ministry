@@ -1,18 +1,25 @@
 
 
     window.silex = window.silex || {}
-    window.silex.data = {"site":{"width":960},"pages":[{"id":"page-home","displayName":"Home","link":{"linkType":"LinkTypePage","href":"#!page-home"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-our-mission","displayName":"Our Mission","link":{"linkType":"LinkTypePage","href":"#!page-our-mission"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-news-press","displayName":"News & Press","link":{"linkType":"LinkTypePage","href":"#!page-news-press"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-how-to-help","displayName":"How to Help","link":{"linkType":"LinkTypePage","href":"#!page-how-to-help"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-contact","displayName":"Contact","link":{"linkType":"LinkTypePage","href":"#!page-contact"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}
-/* slider buttons */
-$(function() {
-    try {
-        var slider = $('.slider .unslider').children().get(0);
-        var unslider = $(slider).data('unslider');
-        $('.sub-nav').click(function() {
-            unslider.next()
-            $('.sub-nav-active').removeClass('sub-nav-active');
-            $(this).addClass('sub-nav-active');
-        });
-    }
-    catch(e) {
-    }
-})
+    window.silex.data = {"site":{"width":1000},"pages":[{"id":"page-home-page","displayName":"Home Page","link":{"linkType":"LinkTypePage","href":"#!page-home-page"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-product-details","displayName":"Product Details","link":{"linkType":"LinkTypePage","href":"#!page-product-details"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-about","displayName":"About","link":{"linkType":"LinkTypePage","href":"#!page-about"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}
+
+        $(function() {
+            /* hamburger menu */
+            $('.close-btn, .open-btn').click(function() {
+                $('body').toggleClass('is-not-active is-active');
+            });
+
+            /*
+                animation widget from here: https://github.com/silexlabs/Silex/issues/443
+            */
+
+            window.sr = ScrollReveal({
+                distance: '100px'
+            });
+            sr.reveal('.from-left', { origin:  'left'});
+            sr.reveal('.from-right', { origin:  'right'});
+            sr.reveal('.from-top', { origin:  'top'});
+            sr.reveal('.from-bottom', { origin:  'bottom'});
+
+        })
+    
