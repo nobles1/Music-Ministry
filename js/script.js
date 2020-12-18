@@ -1,7 +1,7 @@
 
 
     window.silex = window.silex || {}
-    window.silex.data = {"site":{"width":1000},"pages":[{"id":"page-home-page","displayName":"Home Page","link":{"linkType":"LinkTypePage","href":"#!page-home-page"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-music-page","displayName":"Music Page","link":{"linkType":"LinkTypePage","href":"#!page-music-page"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}
+    window.silex.data = {"site":{"width":510},"pages":[{"id":"page-home-page","displayName":"Home Page","link":{"linkType":"LinkTypePage","href":"#!page-home-page"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-music-page","displayName":"Music Page","link":{"linkType":"LinkTypePage","href":"#!page-music-page"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}
 
         $(function() {
             /* hamburger menu */
