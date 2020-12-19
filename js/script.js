@@ -1,25 +1,4 @@
 
 
     window.silex = window.silex || {}
-    window.silex.data = {"site":{"width":510},"pages":[{"id":"page-home-page","displayName":"Home Page","link":{"linkType":"LinkTypePage","href":"#!page-home-page"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-music-page","displayName":"Music Page","link":{"linkType":"LinkTypePage","href":"#!page-music-page"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}
-
-        $(function() {
-            /* hamburger menu */
-            $('.close-btn, .open-btn').click(function() {
-                $('body').toggleClass('is-not-active is-active');
-            });
-
-            /*
-                animation widget from here: https://github.com/silexlabs/Silex/issues/443
-            */
-
-            window.sr = ScrollReveal({
-                distance: '100px'
-            });
-            sr.reveal('.from-left', { origin:  'left'});
-            sr.reveal('.from-right', { origin:  'right'});
-            sr.reveal('.from-top', { origin:  'top'});
-            sr.reveal('.from-bottom', { origin:  'bottom'});
-
-        })
-    
+    window.silex.data = {"site":{"width":1028},"pages":[{"id":"page-home","displayName":"Home","link":{"linkType":"LinkTypePage","href":"#!page-home"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-contact","displayName":"Contact","link":{"linkType":"LinkTypePage","href":"#!page-contact"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-music-page","displayName":"Music Page","link":{"linkType":"LinkTypePage","href":"#!page-music-page"},"canDelete":true,"canRename":true,"canMove":true,"canProperties":true}]}
