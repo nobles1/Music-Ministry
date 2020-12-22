@@ -303,12 +303,12 @@
             
             
             
-        <div data-silex-type="text-element" class="editable-style silex-id-1552774225668-8 text-element prevent-resizable silex-component hide-on-desktop mobile-menu nav prevent-auto-z-index"><div class="silex-element-content normal"><style>.hamburger-menu_1608604898340_727 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1608604898340_727 nav {left: -9999px;}.hamburger-menu_1608604898340_727 nav ul {margin-top: 80px;}.hamburger-menu_1608604898340_727 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1608604898340_727.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1608604898340_727 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1608604898340_727.open .nav-container {}.hamburger-menu_1608604898340_727 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1608604898340_727 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+        <div data-silex-type="text-element" class="editable-style silex-id-1552774225668-8 text-element prevent-resizable silex-component hide-on-desktop mobile-menu nav prevent-auto-z-index"><div class="silex-element-content normal"><style>.hamburger-menu_1608639708854_191 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1608639708854_191 nav {left: -9999px;}.hamburger-menu_1608639708854_191 nav ul {margin-top: 80px;}.hamburger-menu_1608639708854_191 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1608639708854_191.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1608639708854_191 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1608639708854_191.open .nav-container {}.hamburger-menu_1608639708854_191 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1608639708854_191 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
       opacity 0.1s ease-in,
       transform 0.1s ease-in,
-      background 0.1s ease-in;}.hamburger-menu_1608604898340_727.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1608604898340_727 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1608604898340_727.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1608604898340_727.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1608604898340_727 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1608604898340_727.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+      background 0.1s ease-in;}.hamburger-menu_1608639708854_191.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1608639708854_191 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1608639708854_191.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1608639708854_191.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1608639708854_191 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1608639708854_191.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1608604898340_727 closed">
+<div class="hamburger-menu_1608639708854_191 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -321,9 +321,9 @@
             
                 <li><a href="./" class="">Home</a></li>
             
-                <li><a href="music-page.html" class="">Menu</a></li>
+                <li><a href="menu.html">Menu</a></li>
             
-                <li><a href="church-service.html" class="page-link-active">Team</a></li>
+                <li><a href="team.html">Team</a></li>
             
                 <li><a href="info.html">Info</a></li>
             
@@ -339,26 +339,26 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    $('.hamburger-menu_1608604898340_727').removeClass('open');
-    $('.hamburger-menu_1608604898340_727').addClass('closed');
+    $('.hamburger-menu_1608639708854_191').removeClass('open');
+    $('.hamburger-menu_1608639708854_191').addClass('closed');
   }
   function open() {
     isOpen = true;
-    $('.hamburger-menu_1608604898340_727').addClass('open');
-    $('.hamburger-menu_1608604898340_727').removeClass('closed');
+    $('.hamburger-menu_1608639708854_191').addClass('open');
+    $('.hamburger-menu_1608639708854_191').removeClass('closed');
   }
   function toggle() {
     if(isOpen) close();
     else open();
   }
-  var silexElement = $('.hamburger-menu_1608604898340_727').closest('.editable-style');
+  var silexElement = $('.hamburger-menu_1608639708854_191').closest('.editable-style');
   function move(data) {
     var offset = silexElement.offset();
-    $('.hamburger-menu_1608604898340_727 .nav-container').css({
+    $('.hamburger-menu_1608639708854_191 .nav-container').css({
       'transform': 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)'
     });
   }
-  $('.hamburger-menu_1608604898340_727 .hamburger-btn').click(function() { toggle(); });
+  $('.hamburger-menu_1608639708854_191 .hamburger-btn').click(function() { toggle(); });
   $(document).on('silex.scroll silex.resize', function(e) {
     close();
     move(window.silex);
@@ -375,31 +375,26 @@
             <div data-silex-type="container-element" class="editable-style   container-element silex-id-1424710433398 editable-plugin-created" style="">
                     
                 </div><div data-silex-type="container-element" class="editable-style silex-id-1426536866650 editable-plugin-created container-element" style="">
-                    <div data-silex-type="text-element" class="editable-style text-element nav-element silex-id-1434425184890-0 nav" style="">
-                        <div class="silex-element-content normal">
-                            <a href="music-page.html" title="Music Page" class="">Music Page</a></div>
-                    </div>
+                    
                 </div><div data-silex-type="container-element" class="editable-style editable-plugin-created container-element silex-id-1434634331833-2" style="">
 
                     
-                <div data-silex-type="text-element" class="editable-style text-element nav-element silex-id-1434634331834-3 nav" style="">
-                        <div class="silex-element-content normal">
-                            <a href="info.html" class="">INFO</a></div>
-                    </div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1424710332527 nav-element nav" style="">
-                        <div class="silex-element-content normal"><a href="./">
-                            HOME
-                        </a></div>
-                    </div><div data-silex-type="text-element" class="editable-style text-element nav-element silex-id-1434634286307-1 nav" style="">
-                        <div class="silex-element-content normal">
-                            <a href="church-service.html" class="page-link-active">Churce</a>Service</div>
-                    </div><div data-silex-type="container-element" class="editable-style editable-plugin-created container-element silex-id-1434634286306-0" style="">
+                </div><div data-silex-type="container-element" class="editable-style editable-plugin-created container-element silex-id-1434634286306-0" style="">
 
                     
-                </div></div><div data-silex-type="text-element" class="editable-style silex-id-1434426151026-1 text-element paragraph" style="">
-                <div class="silex-element-content normal">
-                    <h2>Music Ministry&nbsp; <br>Sound Of Worship And Praise</h2>
-                </div>
-            </div></div>
+                </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1424710332527 nav-element nav" style="">
+                        <div class="silex-element-content normal"><a href="./" class="">
+                            HOME
+                        </a></div>
+                    </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1434425184890-0 nav-element header" style="">
+                        <div class="silex-element-content normal">
+                            <a href="music-page.html" title="Music Page">Music Page</a></div>
+                    </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1434634286307-1 nav-element header" style="">
+                        <div class="silex-element-content normal">Church Service</div>
+                    </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1434634331834-3 nav-element header" style="">
+                        <div class="silex-element-content normal">
+                            <a href="info.html" class="">INFO</a></div>
+                    </div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1608639951448-0" style=""><div class="silex-element-content normal"><p>Music Ministry</p><p>Sound Of Worship And Praise</p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div></div>
     ﻿</div><div data-silex-type="container-element" class="container-element editable-style silex-id-1538167211265-17 section-element prevent-resizable page-church-service paged-element paged-element-visible"><div data-silex-type="container-element" class="editable-style silex-id-1538167211260-16 container-element silex-element-content website-width"><div data-silex-type="text-element" class="editable-style text-element paragraph silex-id-1471343044963-3 caption" style="">
                 <div class="silex-element-content normal">
                     <p>
@@ -410,5 +405,5 @@
             </div></div></div><div data-silex-type="container-element" class="container-element editable-style silex-id-1484949434473-3 section-element website-min-width footer-container prevent-resizable">
         <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1484949434473-2 container-element">
             
-        </div>
+        <div data-silex-type="text-element" class="editable-style text-element silex-id-1608640406426-1" style=""><div class="silex-element-content normal"><p>Website: mswp.epizy.com</p></div></div></div>
     </div></body></html>
