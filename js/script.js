@@ -1,28 +1,18 @@
 
 
     window.silex = window.silex || {}
-    window.silex.data = {"site":{"width":960},"pages":[{"id":"page-home","displayName":"Home","link":{"linkType":"LinkTypePage","href":"#!page-home"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-music-page","displayName":"Music Page","link":{"linkType":"LinkTypePage","href":"#!page-music-page"},"canDelete":true,"canRename":true,"canMove":true,"canProperties":true}]}
-
-/*
- * active menu widget for Silex
- * create an element which links to an anchor, e.g. an element with a link to #anchor1
- * add the css class "anchor-link" to this element
- * create an element which is the anchor, e.g. an element with the css class "anchor1"
- * when the user clicks on the link, the scroll slides until the element is visible
- * when the user slides and the element is visible, the link gets a css class "active-menu"
- */
+    window.silex.data = {"site":{"width":960},"pages":[{"id":"page-home","displayName":"Home","link":{"linkType":"LinkTypePage","href":"#!page-home"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-our-mission","displayName":"Our Mission","link":{"linkType":"LinkTypePage","href":"#!page-our-mission"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-news-press","displayName":"News & Press","link":{"linkType":"LinkTypePage","href":"#!page-news-press"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-how-to-help","displayName":"How to Help","link":{"linkType":"LinkTypePage","href":"#!page-how-to-help"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-contact","displayName":"Contact","link":{"linkType":"LinkTypePage","href":"#!page-contact"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}
+/* slider buttons */
 $(function() {
-    var container = $('.anchor-container');
-    var containerTop = 0;
-    $(window).scroll(checkScroll);
-    checkScroll();
-    function checkScroll(){
-        var fromTop = $(this).scrollTop();
-        if(containerTop < fromTop) {
-           container.addClass('offscreen');
-        }
-        else {
-           container.removeClass('offscreen');
-        }
+    try {
+        var slider = $('.slider .unslider').children().get(0);
+        var unslider = $(slider).data('unslider');
+        $('.sub-nav').click(function() {
+            unslider.next()
+            $('.sub-nav-active').removeClass('sub-nav-active');
+            $(this).addClass('sub-nav-active');
+        });
     }
-});
+    catch(e) {
+    }
+})
